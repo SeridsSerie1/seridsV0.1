@@ -3,7 +3,7 @@
         <test-component></test-component>
     </div>
 
-    holamundo
+    holamundo, 
 
 </body>
 
