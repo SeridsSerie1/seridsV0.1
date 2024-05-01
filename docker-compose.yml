@@ -5,8 +5,8 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    image: serids_base
-    container_name: serids_base
+    image: my-laravel-app
+    container_name: my-laravel-app
     restart: unless-stopped
     working_dir: /var/www
     volumes:
@@ -35,8 +35,8 @@ services:
     build:
       context: .
       dockerfile: Dockerfile.node
-    image: serids_node
-    container_name: serids_node
+    image: my-laravel-node
+    container_name: my-laravel-node
     ports:
     - "3000:3000"
     restart: unless-stopped
