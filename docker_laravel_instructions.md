@@ -6,7 +6,8 @@
 
 2. Luego se debe crear el contenedor a partir de la imagen que se acaba de correr, se puede hacer de la siguiente manera (Nota: Se puede cambiar el $(pwd) por una ruta en especifica ya que esta utiliza la ruta actual en la que se corra el comando)
 
-        docker run -d -v $(pwd):/root/Code -p 8001:8000 --name serids_base -it laravel bash
+        <!-- docker run -d -v $(pwd):. -p 8001:8009 9001:9000 5174:5173 --name serids_base -it bitnami/laravel:latest bash -->
+        docker run -d -v $(pwd):/app -p 8001:8000 -p 9001:9000 -p 5174:5173 --name serids_base -it bitnami/laravel:latest bash
 
 3. Ingresar al contenedor y poder iniciar el proyecto
 

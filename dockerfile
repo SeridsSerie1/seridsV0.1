@@ -1,34 +1,43 @@
-# syntax=docker/dockerfile:1.4
+# Set the base image for subsequent instructions
+FROM php:8.2-fpm
 
-FROM --platform=$BUILDPLATFORM ubuntu:22.04 AS builder
-ARG DEBIAN_FRONTEND=noninteractive
-ENV PYTHONUNBUFFERED=1
+# Install dependencies
+RUN apt-get update && apt-get install -y \
+    build-essential \
+    libpng-dev \
+    libonig-dev \
+    libxml2-dev \
+    zip \
+    curl \
+    unzip \
+    git \
+    libzip-dev \
+    libfreetype6-dev \
+    libjpeg62-turbo-dev \
+    libpng-dev && \
+    docker-php-ext-install pdo_mysql mbstring exif pcntl bcmath gd zip
 
-RUN echo "Installing locals"
-# RUN apt update && apt install -y locales systemd && rm -rf /var/lib/apt/lists/* \
-#   && localedef -i en_US -c -f UTF-8 -A /usr/share/locale/locale.alias en_US.UTF-8
-ENV LANG en_US.utf8
-ENV TZ=America/Caracas
+# Clear cache
+RUN apt-get clean && rm -rf /var/lib/apt/lists/*
 
-RUN apt-get update -y && apt-get upgrade -y
+# Install Composer
+COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
 
-# install php
-RUN apt install php-mbstring php-xml php-bcmath php-curl php-gd php-intl php-xsl php-zip php-pdo-mysql -y
-RUN apt update -y
-RUN apt install php-cli unzip curl gnupg gpg nano vim -y
-RUN curl -sS https://getcomposer.org/installer -o /tmp/composer-setup.php
-RUN php -r "if (hash_file('SHA384', '/tmp/composer-setup.php') === '$HASH') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;"
-RUN php /tmp/composer-setup.php --install-dir=/usr/local/bin --filename=composer
+# Set working directory
+WORKDIR /var/www
 
-RUN composer require cocur/slugify:4.1
-RUN apt install php-mbstring
-RUN composer dump-autoload
-RUN composer install --no-scripts
-RUN composer update
+# Remove default server definition
+RUN rm -rf /var/www/html
 
-# install mysql
-RUN apt install mysql-server -y
+# Copy existing application directory contents
+COPY . /var/www
 
-EXPOSE 8000
-WORKDIR /root/Code/
-CMD bash
+# Copy existing application directory permissions
+COPY --chown=www-data:www-data . /var/www
+
+# Change current user to www
+USER www-data
+
+# Expose port 9000 and start php-fpm server
+EXPOSE 9000
+CMD ["php-fpm"]
