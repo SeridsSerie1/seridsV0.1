@@ -7,4 +7,4 @@
 
 </body>
 
-chamo!
+llegaste al llegadero si instalaste por docker!
