@@ -17,3 +17,6 @@ sudo chmod -R a+rw storage
 <!-- 5 -->
 corre las migraciones desde la interfaz
 (o entra en el contenedor principal corre las migraciones y seeds)
+el proyecto estara corriendo en:
+
+localhost:8000/
