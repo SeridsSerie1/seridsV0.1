@@ -11,7 +11,7 @@ docker-compose build
 <!-- 3 -->
 docker-compose up -d
 
-<!-- 4 -->
+<!-- 4  solo en linux...-->
 sudo chmod -R a+rw storage
 
 <!-- 5 -->
