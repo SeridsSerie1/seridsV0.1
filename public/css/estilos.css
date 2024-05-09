@@ -1,0 +1,16 @@
+/* public/css/estilos.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: orange;
+}
+
+#app {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Otros estilos personalizados aquí */
