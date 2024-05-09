@@ -1,0 +1,5 @@
+Hola Serids.
+
+Fecha: 09/05/24
+
+Hoy trabaje en el frontend del registro de usuario. En la noche sigo trabajando en el login para ir avanzando. Requiero que me echen una mano con el backend y la conexion a la base de datos porque no me ocupo de eso.
