@@ -29,7 +29,11 @@ pueden hacer cuantas quieran siempre y cuando tengan proposito, se borran cuando
 - [Postman, para hacer pruebas de integración.](https://www.postman.com/downloads/).
   (este lo usaremos luego para probar APIS)
 
+- [Warp Terminal](https://www.warp.dev/)
+
 - [Visual Studio Code, editor de codigo.](https://code.visualstudio.com/download).
+
+- [VPN porcia](https://windscribe.com/vpn-for-windows).
 
 - [Git, gestor de versiones.](https://git-scm.com/downloads).
 
