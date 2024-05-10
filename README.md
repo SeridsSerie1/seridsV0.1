@@ -10,7 +10,7 @@
 ## ESTRUCTURA DE LAS RAMAS:
 (estos nombres pueden cambiar, el proposito general es mas o menos este...)
 
-- base: la version estable del proyecto, si necesitan hacer algo nuevo, se arranca de aqui la rama nueva.
+- stable: la version estable del proyecto, si necesitan hacer algo nuevo, se arranca de aqui la rama nueva.
 - rama personal, para desarrollo de su tarea actual
 - rama personal-test, probar lo que creen terminado mas lo que esta estable en base. y quizas dev.
 - dev: donde vamos a colocar cosas, que crean terminadas todos, alli se resolveran conflictos antes de llevarlos a la rama principal.
