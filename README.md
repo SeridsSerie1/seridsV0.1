@@ -40,3 +40,14 @@ pueden hacer cuantas quieran siempre y cuando tengan proposito, se borran cuando
 - [Gitflow](https://www.atlassian.com/es/git/tutorials/comparing-workflows/gitflow-workflow)
 
 - [Github flow](https://guides.github.com/introduction/flow/)
+
+- [Gitflow cheatsheet](https://danielkummer.github.io/git-flow-cheatsheet/)
+
+## CHEATSHEETS
+
+- [Docker cheatsheet](https://www.docker.com/sites/default/files/Docker_CheatSheet_08.09.2016_0.pdf)
+
+- [git cheatsheet](https://github.com/git-cheat-sheet/git-cheat-sheet)
+
+## OTROS:
+
