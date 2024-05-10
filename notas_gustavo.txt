@@ -1,7 +1,4 @@
-<<<<<<< HEAD
 Hola Serids este es mi lugar de notas para lo que vaya avanzando en el proyecto.
-=======
 HOLA SERIDS AQUÍ ESTARÁN MIS NOTAS RESPECTO A LAS ACTIVIDADES O MODIFICACIONES HECHAS CADA DÍA DE LUNES A VIERNES.
 
->>>>>>> 035378f94a5fdec65a8aee1b9ad5d84a94a62a6a
 
