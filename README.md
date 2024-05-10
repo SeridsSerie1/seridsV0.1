@@ -47,6 +47,9 @@ pueden hacer cuantas quieran siempre y cuando tengan proposito, se borran cuando
 
 - [Gitflow cheatsheet](https://danielkummer.github.io/git-flow-cheatsheet/)
 
+  (aporte: zoriyu)
+- [codigofacilito](https://codigofacilito.com/)
+
 ## CHEATSHEETS
 
 - [Docker cheatsheet](https://www.docker.com/sites/default/files/Docker_CheatSheet_08.09.2016_0.pdf)
