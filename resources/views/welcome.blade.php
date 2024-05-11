@@ -2,9 +2,5 @@
     <div id="app">
         <test-component></test-component>
     </div>
-
-    holamundo, 
-
+    hola mundo
 </body>
-
-llegaste al llegadero si instalaste por docker!

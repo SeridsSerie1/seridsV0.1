@@ -1,12 +1,11 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\UserController;
 
 Route::get('/', function () {
     return view('welcome');
 });
 
-
-Route::get('/usuario', function () {
-    return view('usuario');
-});
+//Routes Controller Users
+Route::post('register', 'UserController@register')->name('users.register');
