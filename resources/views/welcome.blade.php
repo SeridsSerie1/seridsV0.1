@@ -8,3 +8,7 @@
 </body>
 
 llegaste al llegadero si instalaste por docker!
+
+<?php  
+
+phpinfo();

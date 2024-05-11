@@ -1,0 +1,1 @@
+2024-05-11 13:21:01: imagepng(/qrcodes005_file_0552d5be918cbb8c01c8546654c9fbd6.png): Failed to open stream: Permission denied2024-05-11 13:26:02: imagepng(/qrcodes005_file_0552d5be918cbb8c01c8546654c9fbd6.png): Failed to open stream: Permission denied
