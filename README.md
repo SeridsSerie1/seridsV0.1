@@ -52,17 +52,14 @@ pueden hacer cuantas quieran siempre y cuando tengan proposito, se borran cuando
 
 ## CHEATSHEETS
 
-- [Docker cheatsheet](https://www.docker.com/sites/default/files/Docker_CheatSheet_08.09.2016_0.pdf)
-
-- [git cheatsheet](https://github.com/git-cheat-sheet/git-cheat-sheet)
-
-## OTROS:
+## OTROS
 
 (se exportan asi)
+
 - [Guia](https://stackoverflow.com/questions/35773299/how-can-you-export-the-visual-studio-code-extension-list)
 
-
 (mis extensiones vs-code)
+
 code --install-extension aaron-bond.better-comments
 code --install-extension amiralizadeh9480.laravel-extra-intellisense
 code --install-extension aykutsarac.jsoncrack-vscode
