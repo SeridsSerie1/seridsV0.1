@@ -2,5 +2,5 @@
     <div id="app">
         <test-component></test-component>
     </div>
-    hola mundo
+    hola s
 </body>
