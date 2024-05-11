@@ -8,7 +8,10 @@
     <link rel="stylesheet" href="{{ asset('css/register.css') }}">
 </head>
 <body>
-
+<header>
+        <!-- Aquí va el contenido del encabezado (header) -->
+        @include('partials.header')
+    </header>
 <div class="container">
     <h2>Registro de Usuario</h2>
     <form action="#" method="POST" class="register-form">
@@ -32,6 +35,10 @@
         </div>
     </form>
 </div>
+<footer>
+        <!-- Aquí va el contenido del pie de página (footer) -->
+        @include('partials.footer')
+    </footer>
 
 </body>
 </html>

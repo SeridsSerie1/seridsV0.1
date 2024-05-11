@@ -6,8 +6,13 @@
     <title>Login de Usuarios</title>
     <link rel="stylesheet" href="{{ asset('css/login.css') }}">
 </head>
-<body>
 
+
+<body>
+<header>
+        <!-- Aquí va el contenido del encabezado (header) -->
+        @include('partials.header')
+    </header>
 <div class="container">
     <h2>Login de Usuario</h2>
     <form method="POST" action="{{ route('login') }}">
@@ -53,5 +58,11 @@
 
 </div>
 
+<footer>
+        <!-- Aquí va el contenido del pie de página (footer) -->
+        @include('partials.footer')
+    </footer>
+
 </body>
+
 </html>
