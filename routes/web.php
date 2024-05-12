@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\PdfController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -29,6 +30,9 @@ Route::get('forgot-password', function () {
 //Routes Controller Users
 Route::post('/register', [UserController::class,'register']);
 
+//Routes Controller fpdf
+
+Route::get('/generate-pdf', [PdfController::class,'generatePDF']);
 
 Route::get('app', function () {
     return view('layouts.app');
