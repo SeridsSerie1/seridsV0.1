@@ -15,6 +15,12 @@ docker-compose up -d
 sudo chmod -R a+rw storage
 
 <!-- 5 -->
+correr composer install "dentro" del contenedor de docker de laravel
+
+<!-- 6 -->
+correr npm install dentro de la carpeta del proyecto "dentro" del contenedor de node...
+
+<!-- 7 -->
 corre las migraciones desde la interfaz
 (o entra en el contenedor principal corre las migraciones y seeds)
 el proyecto estara corriendo en:

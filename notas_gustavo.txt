@@ -1,2 +1,13 @@
+Hola Serids este es mi lugar de notas para lo que vaya avanzando en el proyecto.
 HOLA SERIDS AQUÍ ESTARÁN MIS NOTAS RESPECTO A LAS ACTIVIDADES O MODIFICACIONES HECHAS CADA DÍA DE LUNES A VIERNES.
+
+09/05/2024
+Trabaje con el formulario registro de usuario.
+10/05/2024
+*Trabaje con el inicio de sesión y creé layouts para el header y footer.
+*Trabaje con el formulario de recuperar contraseña con el email.
+
+Cualquier sugerencias me las hacen llegar por favor.
+
+
 
