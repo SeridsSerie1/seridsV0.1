@@ -13,7 +13,7 @@ include('../phpqrcode/qrlib.php');
 $tempDir = "/qrcodes";
 
 //contenido del qr
-$codeContents = 'Listoooo :3';
+$codeContents = 'Otra vez T.T';
 
 // we need to generate filename somehow, 
 // with md5 or with database ID used to obtains $codeContents...
