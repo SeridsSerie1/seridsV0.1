@@ -9,8 +9,8 @@
 <body class="antialiased">
     <div id="app">
         <test-component></test-component>
+        <h1>Bienvenido a Serids</h1>
     </div>
-    hola s
     <script src="{{ mix('js/app.js') }}"></script>
 </body>
 </html>

@@ -77,6 +77,9 @@ class UserController extends Controller
         $user->remember_token = $token;
         $user->save();
 
+        // Redireccionar al usuario a la vista welcome.blade.php
+        return redirect('/');
+
         return response()->json([
             'status' => 'success',
             'message' => 'Usuario autenticado correctamente',
