@@ -15,7 +15,9 @@
     </header>
 <div class="container">
     <h2>Login de Usuario</h2>
-    <form method="POST" action="{{ route('login') }}">
+    <test-component></test-component>
+    <!--<form method="POST" action="{{ route('login') }}">-->
+    <form action="/login" method="POST" class="register-form">
     @csrf
 
     <div class="form-group">
@@ -62,7 +64,7 @@
         <!-- Aquí va el contenido del pie de página (footer) -->
         @include('partials.footer')
     </footer>
-
+    <script src="{{ asset('js/Components/TestComponent.vue') }}"></script>
 </body>
 
 </html>
