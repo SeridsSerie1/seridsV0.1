@@ -27,8 +27,10 @@ Route::get('forgot-password', function () {
 })->name('password.request');
 */
 
-//Routes Controller Users
+//Routes Controller Users Authentication
 Route::post('/register', [UserController::class,'register']);
+Route::post('/login', [UserController::class, 'login']);
+Route::post('/logout', [UserController::class, 'logout']);
 
 //Routes Controller fpdf
 
