@@ -2,7 +2,10 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
+use Illuminate\Support\Facades\Mail;
+use App\Mail\ContactanosMailable;
 use App\Http\Controllers\PdfController;
+
 
 Route::get('/', function () {
     return view('welcome');
@@ -40,3 +43,13 @@ Route::get('app', function () {
     return view('layouts.app');
 });
 
+/*Routes Emails*/
+
+Route::get('contactanos', function () {
+    
+    Mail::to('elicarconsales@gmail.com')
+    ->send(new ContactanosMailable);
+
+    return "Mensaje enviado";
+
+})->name('contactanos');
