@@ -4,39 +4,53 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\PdfController;
 
-Route::get('/', function () {
-    return view('welcome');
-});
 
 
-Route::get('/register', function () {
-    return view('register');
-});
+// pantalla del "landing" donde llega la gente directo que no esta autenticada
+// o que ha perdido session.
+Route::get('/', function () { return view('welcome'); });
 
-Route::get('/login', function () {
-    return view('login');
-})->name('login');
 
-/*Route::get('forgot-password', [ForgotPasswordController::class, 'showLinkRequestForm'])->name('password.request');
-Route::post('forgot-password', [ForgotPasswordController::class, 'sendResetLinkEmail'])->name('password.email');
-Route::get('reset-password/{token}', [ResetPasswordController::class, 'showResetForm'])->name('password.reset');
-Route::post('reset-password', [ResetPasswordController::class, 'reset'])->name('password.update');*/
-/*
-Route::get('forgot-password', function () {
-    return view('forgot-password');
-})->name('password.request');
-*/
+// pantalla donde la gente se registra (crea su usuario)
+Route::get('/register', function () { return view('register'); });
 
-//Routes Controller Users Authentication
+// pantalla que las personas accesan a la plataforma
+Route::get('/login', function () { return view('login'); })->name('login');
+
+// pantallas creadas, sin implementacion ni redireccion
+// pantalla de olvide contraseña (blade)
+// Route::get('forgot-password', [ForgotPasswordController::class, 'showLinkRequestForm'])->name('password.request');
+
+// pantalla de recuperar contraseña (dnpoint)
+// Route::post('forgot-password', [ForgotPasswordController::class, 'sendResetLinkEmail'])->name('password.email');
+
+// pantalla recurerar contraseña... ((verificar si pre o post llenado formulario)
+// Route::get('reset-password/{token}', [ResetPasswordController::class, 'showResetForm'])->name('password.reset');
+
+// recuperar contraseña endpoint
+// Route::post('reset-password', [ResetPasswordController::class, 'reset'])->name('password.update');*/
+
+// pantalla recurperar contraseña
+// Route::get('forgot-password', function () { return view('forgot-password'); })->name('password.request'); 
+
+
+//Routes Controller Users Authentication (endpoints)
 Route::post('/register', [UserController::class,'register']);
 Route::post('/login', [UserController::class, 'login']);
 Route::post('/logout', [UserController::class, 'logout']);
 
 //Routes Controller fpdf
-
+// test de concepto
 Route::get('/generate-pdf', [PdfController::class,'generatePDF']);
 
-Route::get('app', function () {
-    return view('layouts.app');
-});
+// layouts para composiciones en las pantallas
+// headers y footers principalmente
+// deberian haber menus de acceso a las pantallas aparte o acciones
+Route::get('app', function () { return view('layouts.app'); });
+
+// de manera oculta esta la pantalla de /log-viewer donde puedes ver los logs de la app, 
+// no se refleja aqui poruqe esta en un middleware
+//  URL: <ej: http://127.0.0.1:8000>/log-viewer
+
+
 
