@@ -22,26 +22,18 @@ body::before {
     z-index: -1;
 }
 
-<<<<<<< HEAD
-=======
 
->>>>>>> 3d5c482c8d93a0bad2bfe5d3c210111356e72306
 .container {
     width: 80%;
     max-width: 400px;
     padding: 30px;
     background-color: #fff;
-<<<<<<< HEAD
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-=======
     top: 50%;
     transform: translateY(-50%);
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     position: absolute;
     z-index: 1; /* Coloca el contenedor por encima de la franja azul */
->>>>>>> 3d5c482c8d93a0bad2bfe5d3c210111356e72306
 }
 
 
@@ -88,8 +80,6 @@ input[type="password"] {
 .register-button:hover {
     background-color: #45a049;
 }
-<<<<<<< HEAD
-=======
 
 header {
     position: fixed;
@@ -154,4 +144,3 @@ footer {
 footer p {
     margin: 0; /* Elimina el margen */
 }
->>>>>>> 3d5c482c8d93a0bad2bfe5d3c210111356e72306

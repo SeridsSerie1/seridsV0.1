@@ -1,5 +1,21 @@
+<<<<<<< HEAD
 Hola Serids.
 
 Fecha: 09/05/24
 
 Hoy trabaje en el frontend del registro de usuario. En la noche sigo trabajando en el login para ir avanzando. Requiero que me echen una mano con el backend y la conexion a la base de datos porque no me ocupo de eso.
+=======
+Hola Serids este es mi lugar de notas para lo que vaya avanzando en el proyecto.
+HOLA SERIDS AQUÍ ESTARÁN MIS NOTAS RESPECTO A LAS ACTIVIDADES O MODIFICACIONES HECHAS CADA DÍA DE LUNES A VIERNES.
+
+09/05/2024
+Trabaje con el formulario registro de usuario.
+10/05/2024
+*Trabaje con el inicio de sesión y creé layouts para el header y footer.
+*Trabaje con el formulario de recuperar contraseña con el email.
+
+Cualquier sugerencias me las hacen llegar por favor.
+
+
+
+>>>>>>> 3d5c482c8d93a0bad2bfe5d3c210111356e72306

@@ -1,66 +1,130 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+## NOTAS DE INTERES PARA EL PROYECTO: 
 
-## About Laravel
+## EL TRELLO DEL PROYECTO 
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+- [Trello del proyecto](https://trello.com/b/gaV9pAYI/seridseducation).
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
 
-## Learning Laravel
+## ESTRUCTURA DE LAS RAMAS:
+(estos nombres pueden cambiar, el proposito general es mas o menos este...)
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+- base: la version estable del proyecto, si necesitan hacer algo nuevo, se arranca de aqui la rama nueva.
+- rama personal, para desarrollo de su tarea actual
+- rama personal-test, probar lo que creen terminado mas lo que esta estable en base. y quizas dev.
+- dev: donde vamos a colocar cosas, que crean terminadas todos, alli se resolveran conflictos antes de llevarlos a la rama principal.
+- test: el paso final antes de llegar a base, aqui se mostraran las funcinalidades nuevas a usuarios, si todo sale bien, se lleva a base.
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+- main es mia (luis), para yo jugar con integraciones o variaciones.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+cuando borrar las ramas? 
 
-## Laravel Sponsors
+pueden hacer cuantas quieran siempre y cuando tengan proposito, se borran cuando el cambio o funcionalidad que indica se haya integrado a base.
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+## HERRAMIENTAS SUGERIDAS
 
-### Premium Partners
+- [Dbeaver, gestor de base de datos.](https://dbeaver.io/download/). 
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+- [Postman, para hacer pruebas de integración.](https://www.postman.com/downloads/).
+  (este lo usaremos luego para probar APIS)
 
-## Contributing
+- [Warp Terminal](https://www.warp.dev/)
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+- [Visual Studio Code, editor de codigo.](https://code.visualstudio.com/download).
 
-## Code of Conduct
+- [VPN porcia](https://windscribe.com/vpn-for-windows).
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+- [Git, gestor de versiones.](https://git-scm.com/downloads).
 
-## Security Vulnerabilities
+- [Docker, para correr el proyecto en un ambiente virtual.](https://www.docker.com/products/docker-desktop).
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+## CONSEJOS
 
-## License
+- [Gitflow](https://www.atlassian.com/es/git/tutorials/comparing-workflows/gitflow-workflow)
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+- [Github flow](https://guides.github.com/introduction/flow/)
+
+- [Gitflow cheatsheet](https://danielkummer.github.io/git-flow-cheatsheet/)
+
+  (aporte: zoriyu)
+- [codigofacilito](https://codigofacilito.com/)
+
+## CHEATSHEETS
+
+## OTROS
+
+(se exportan asi)
+
+- [Guia](https://stackoverflow.com/questions/35773299/how-can-you-export-the-visual-studio-code-extension-list)
+
+(mis extensiones vs-code)
+
+code --install-extension aaron-bond.better-comments
+code --install-extension amiralizadeh9480.laravel-extra-intellisense
+code --install-extension aykutsarac.jsoncrack-vscode
+code --install-extension bmewburn.vscode-intelephense-client
+code --install-extension christian-kohler.path-intellisense
+code --install-extension chrmarti.regex
+code --install-extension codium.codium
+code --install-extension continue.continue
+code --install-extension cweijan.dbclient-jdbc
+code --install-extension cweijan.vscode-mysql-client2
+code --install-extension daltonmenezes.aura-theme
+code --install-extension dart-code.dart-code
+code --install-extension dart-code.flutter
+code --install-extension davidanson.vscode-markdownlint
+code --install-extension dbaeumer.vscode-eslint
+code --install-extension devsense.composer-php-vscode
+code --install-extension devsense.intelli-php-vscode
+code --install-extension devsense.phptools-vscode
+code --install-extension devsense.profiler-php-vscode
+code --install-extension donjayamanne.githistory
+code --install-extension eamodio.gitlens
+code --install-extension ecmel.vscode-html-css
+code --install-extension esbenp.prettier-vscode
+code --install-extension felixangelov.bloc
+code --install-extension formulahendry.auto-rename-tag
+code --install-extension formulahendry.code-runner
+code --install-extension googlecloudtools.cloudcode
+code --install-extension gruntfuggly.todo-tree
+code --install-extension jimmydaddy.vscode-bard
+code --install-extension johnpapa.winteriscoming
+code --install-extension kisstkondoros.vscode-gutter-preview
+code --install-extension mechatroner.rainbow-csv
+code --install-extension ms-azuretools.vscode-docker
+code --install-extension ms-ceintl.vscode-language-pack-es
+code --install-extension ms-vscode-remote.remote-containers
+code --install-extension ms-vscode-remote.remote-ssh
+code --install-extension ms-vscode-remote.remote-ssh-edit
+code --install-extension ms-vscode-remote.remote-wsl
+code --install-extension ms-vscode.powershell
+code --install-extension ms-vscode.remote-explorer
+code --install-extension ms-vscode.sublime-keybindings
+code --install-extension msjsdiag.vscode-react-native
+code --install-extension naumovs.color-highlight
+code --install-extension octref.vetur
+code --install-extension oderwat.indent-rainbow
+code --install-extension pkief.material-icon-theme
+code --install-extension postman.postman-for-vscode
+code --install-extension rapidapi.vscode-services
+code --install-extension ritwickdey.liveserver
+code --install-extension shopify.ruby-lsp
+code --install-extension silasnevstad.gpthelper
+code --install-extension streetsidesoftware.code-spell-checker
+code --install-extension streetsidesoftware.code-spell-checker-spanish
+code --install-extension tobermory.es6-string-html
+code --install-extension tomoki1207.pdf
+code --install-extension usernamehw.errorlens
+code --install-extension visualstudioexptteam.intellicode-api-usage-examples
+code --install-extension visualstudioexptteam.vscodeintellicode
+code --install-extension vivaxy.vscode-conventional-commits
+code --install-extension vscode-icons-team.vscode-icons
+code --install-extension vsls-contrib.codetour
+code --install-extension vue.volar
+code --install-extension wallabyjs.console-ninja
+code --install-extension wallabyjs.quokka-vscode
+code --install-extension wix.vscode-import-cost
+code --install-extension xabikos.javascriptsnippets
+code --install-extension xdebug.php-debug
+

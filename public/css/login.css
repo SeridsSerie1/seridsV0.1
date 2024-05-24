@@ -10,40 +10,33 @@ body {
     position: relative;
 }
 
+
 body::before {
     content: '';
-    position: absolute;
+    position: absolute; /* Ajusta el posicionamiento según sea necesario */
+    z-index: -1; /* Asegúrate de que la franja azul esté detrás del encabezado y el pie de página */
     top: 50%; /* Centra el pseudo-elemento verticalmente */
     left: 0;
     width: 100%;
     height: 100px; /* Altura de la franja azul */
     background-color: #007bff;
     transform: translateY(-50%); /* Mueve hacia arriba la mitad de la altura del pseudo-elemento */
-    z-index: -1;
 }
 
-<<<<<<< HEAD
-=======
 
->>>>>>> 3d5c482c8d93a0bad2bfe5d3c210111356e72306
+
 .container {
     width: 80%;
     max-width: 400px;
     padding: 30px;
     background-color: #fff;
-<<<<<<< HEAD
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-=======
     top: 50%;
     transform: translateY(-50%);
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     position: absolute;
     z-index: 1; /* Coloca el contenedor por encima de la franja azul */
->>>>>>> 3d5c482c8d93a0bad2bfe5d3c210111356e72306
 }
-
 
 h2 {
     text-align: center;
@@ -62,7 +55,6 @@ label {
     color: #555;
 }
 
-input[type="text"],
 input[type="email"],
 input[type="password"] {
     width: 100%;
@@ -72,7 +64,15 @@ input[type="password"] {
     box-sizing: border-box;
 }
 
-.register-button {
+.form-check {
+    margin-bottom: 20px;
+}
+
+.form-check input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.btn-primary {
     display: block;
     width: 50%; /* Ancho del botón */
     margin: 0 auto; /* Centrar horizontalmente */
@@ -84,12 +84,18 @@ input[type="password"] {
     cursor: pointer;
 }
 
-
-.register-button:hover {
+.btn-primary:hover {
     background-color: #45a049;
 }
-<<<<<<< HEAD
-=======
+
+.btn-link {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.btn-link:hover {
+    text-decoration: underline;
+}
 
 header {
     position: fixed;
@@ -101,18 +107,24 @@ header {
 }
 
 footer {
+    background-color: #333; /* Color de fondo */
+    color: #fff; /* Color del texto */
+    padding: 20px 0; /* Espaciado interno */
+    text-align: center; /* Centra el texto */
     position: fixed;
     bottom: 0;
     left: 0;
     width: 100%;
-    background-color: #ffffff; /* Ajusta el color de fondo según sea necesario */
-    z-index: 1; /* Asegúrate de que el pie de página esté por encima de la franja azul */
+    z-index: 1; /* Asegúrate de que el encabezado esté por encima de la franja azul */
 }
+
 
 /* Estilos generales para el nav */
 nav {
     background-color: #333; /* Color de fondo */
     padding: 20px 0; /* Espaciado interno */
+    display: flex; /* Usa flexbox para alinear elementos */
+    align-items: center; /* Alinea verticalmente los elementos */
 }
 
 /* Estilos para la lista no ordenada */
@@ -121,6 +133,7 @@ nav ul {
     margin: 0; /* Elimina el margen */
     padding: 0; /* Elimina el relleno */
     text-align: center; /* Centra los elementos de la lista */
+    display: flex;
 }
 
 /* Estilos para los elementos de la lista */
@@ -148,10 +161,21 @@ footer {
     color: #fff; /* Color del texto */
     padding: 20px 0; /* Espaciado interno */
     text-align: center; /* Centra el texto */
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1; /* Asegúrate de que el encabezado esté por encima de la franja azul */
 }
 
 /* Estilos para el párrafo dentro del footer */
 footer p {
     margin: 0; /* Elimina el margen */
 }
->>>>>>> 3d5c482c8d93a0bad2bfe5d3c210111356e72306
+
+
+nav img {
+    max-height: 30px; /* Establece la altura máxima del logo */
+    margin-right: 20px; /* Añade espacio entre el logo y el menú */
+}
+
