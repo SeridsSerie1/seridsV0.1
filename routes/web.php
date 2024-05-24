@@ -2,8 +2,9 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
+use Illuminate\Support\Facades\Mail;
+use App\Mail\ContactanosMailable;
 use App\Http\Controllers\PdfController;
-
 
 
 // pantalla del "landing" donde llega la gente directo que no esta autenticada
@@ -54,3 +55,13 @@ Route::get('app', function () { return view('layouts.app'); });
 
 
 
+/*Routes Emails*/
+
+Route::get('contactanos', function () {
+    
+    Mail::to('elicarconsales@gmail.com')
+    ->send(new ContactanosMailable);
+
+    return "Mensaje enviado";
+
+})->name('contactanos');
