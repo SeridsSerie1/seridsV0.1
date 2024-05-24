@@ -1,6 +1,6 @@
 <!-- resources/views/partials/header.blade.php -->
 <nav>
-<img src="{{ asset('images/logoserids.png') }}" alt="Logo de tu empresa">
+<img src="{{ asset('images/logoserids.png') }}" alt="logo de serids">
     <ul>
         <li><a href="#">Inicio</a></li>
         <li><a href="#">Acerca de</a></li>
