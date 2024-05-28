@@ -6,16 +6,6 @@ use Illuminate\Support\Facades\Mail;
 use App\Mail\ContactanosMailable;
 use App\Http\Controllers\PdfController;
 
-<<<<<<< HEAD
-Route::get('/', function () {
-    return view('welcome');
-});
-
-Route::get('/register', function () {
-    return view('register');
-});
-=======
-
 // pantalla del "landing" donde llega la gente directo que no esta autenticada
 // o que ha perdido session.
 Route::get('/', function () { return view('welcome'); });
@@ -45,8 +35,6 @@ Route::get('/login', function () { return view('login'); })->name('login');
 
 
 //Routes Controller Users Authentication (endpoints)
-Route::post('/register', [UserController::class,'register']);
-Route::post('/login', [UserController::class, 'login']);
 Route::post('/logout', [UserController::class, 'logout']);
 
 //Routes Controller fpdf
@@ -63,7 +51,6 @@ Route::get('app', function () { return view('layouts.app'); });
 //  URL: <ej: http://127.0.0.1:8000>/log-viewer
 
 
-
 /*Routes Emails*/
 
 Route::get('contactanos', function () {
@@ -74,4 +61,3 @@ Route::get('contactanos', function () {
     return "Mensaje enviado";
 
 })->name('contactanos');
->>>>>>> 3d5c482c8d93a0bad2bfe5d3c210111356e72306
